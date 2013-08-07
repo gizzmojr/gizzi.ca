@@ -132,9 +132,19 @@ textarea {
 	border-radius: 10px;
 }
 
+#navouter {
+	height: 100%;
+	width: 100%
+	veritcal-align: middle;
+}
+
 #navcontainer {
-	float: left;
-	position: relative;
+	position: middle;
+	width: 600px;
+	text-align: center;
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #navcontainer li {
