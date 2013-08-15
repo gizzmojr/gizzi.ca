@@ -244,7 +244,37 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
 		top: 1.5em;
 		width: 190px;
 	}
-	
+
+/*
+	About
+*****************/
+#about {
+	background: #fff;
+	font-style: normal;
+	margin-bottom: 2em;
+	overflow: hidden;
+	padding: 20px;
+	text-align: left;
+	width: 760px;
+ 
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+ 
+	#about .primary {float: left; width: 165px;}
+	#about .primary strong {color: #C64350; display: block; font-size: 1.286em;}
+	#about .photo {float: left; margin: 5px 20px;}
+	 
+	#about .url:link, #about .url:visited {text-decoration: none;}
+	 
+	#about .bio {float: right; width: 500px;}
+ 
+/*
+	Footer
+*****************/
+#contentinfo {padding-bottom: 2em; text-align: right;}	
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
