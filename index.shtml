@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 		<title>Gizzi Gadgets</title>
+		<meta name="description" content="This is a lengthy description." />
+        <meta name="viewport" content="width=device-width">
+		<meta name="Keywords" content="Motorcycles, Animals, Networking, Stuff" />
+		
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		<link rel="publisher" href="https://plus.google.com/110992459509753500705" />
+		<link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.jpg" />
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+		
+    </head>
+    <body id="index" class="home">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+		<!-- page inspiration by Enrique Ramirez, http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/ -->
+		
+		<header id="banner" class="body">
+			<h1>Welcome to Gizzi Gadgets</h1>
+		 
+			<nav><ul>
+				<li class="active"><a href="/">home</a></li>
+				<li><a href="/about.html">About Me</a></li>
+				<!-- <li><a href="/blog.html">Blog</a></li> -->
+				<li><a href="/contact.html">Contact</a></li>
+			</ul></nav>
+		 
+		</header><!-- /#banner -->
+
+		<section id="content" class="body">
+		stuff goes here
+		</section><!-- /#content -->
+		
+		<footer id="contentinfo" class="body">
+			<address id="about" class="vcard body">
+			About Footer
+			</address><!-- /#about -->
+			<p>&copy; 2013(pending never) M. Gizzi</a></p>
+		</footer><!-- /#contentinfo -->
+		<!--#echo var="DATE_LOCAL" -->
+		<!--#include files="footer.html" -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
