@@ -101,7 +101,7 @@ textarea {
 
 /***** Layout *****/
 .body {clear: both; margin: 0 auto; width: 800px;}
-img.right figure.right {float: right; margin: 0 0 2em 2em;}
+img.right, figure.right {float: right; margin: 0 0 2em 2em;}
 img.left, figure.left {float: right; margin: 0 0 2em 2em;}
    
 /*
@@ -393,6 +393,25 @@ img.left, figure.left {float: right; margin: 0 0 2em 2em;}
     /* Style adjustments for high resolution devices */
 }
 
+@media all and (max-width: 320px) {
+    /* Styles for iPhone/Android portrait */
+	/***** Layout *****/
+	.body {clear: both; margin: 0 auto; width: 320px;}
+
+	#banner h1 {font-size: 2.571em; line-height: .8;}
+	
+	#content {
+		background: #fff;
+		margin-bottom: 2em;
+		overflow: hidden;
+		padding: 20px 20px;
+		width: 320px;
+
+		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
+	}
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
