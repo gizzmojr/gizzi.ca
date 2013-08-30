@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gizzi Gadgets</title>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="This is a lengthy description." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Keywords" content="Motorcycles, Animals, Networking, Stuff" />	
+
+	<link rel="publisher" href="https://plus.google.com/110992459509753500705" />
+	<!-- <link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.jpg" /> -->
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+  
+<body>
+	<!-- Start Here -->
+    <div class="container">
+    <div class="masthead">
+        <h1>Gizzi Gadgets</h1>
+		logo here
+        <ul class="nav nav-pills">
+            <li><a href="/" class="btn btn-lg">Home</a></li>
+            <li class="active"><a href="" class="btn btn-primary btn-lg">Services</a></li>
+            <li><a href="#" class="btn btn-lg">Projects</a></li>
+            <li><a href="#" class="btn btn-lg">About</a></li>
+            <li><a href="#" class="btn btn-lg">Contact</a></li>
+        </ul>
+    </div>
+
+	<!-- Nav Tabs -->
+	<ul class="nav nav-tabs" id="ServicesTab">
+		<li class="active"><a href="#repair">Repair</a></li>
+		<li><a href="#troubleshoot">Troubleshoot</a></li>
+		<li><a href="#design">Design</a></li>
+		<li><a href="#other">Other</a></li>
+	</ul>
+
+	<div class="tab-content">
+		<!-- repair -->
+		<div class="tab-pane active" id="repair">
+		    <div class="row">
+				<div class="col-lg-3">
+				    <img src="/img/services_01.jpg" class="img-responsive" alt="Responsive image" width="256px">
+				    <h2>DESKTOP REPAIRS</h2>
+				    <p>Desktop computer won’t power on, freezes up, crashes, won’t start up or boot, and shows a blue screen or any other issue? I'll will repair it!</p>
+				    <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+				</div>
+				<div class="col-lg-3">
+				 	<img src="/img/services_02.jpg" class="img-responsive" alt="Responsive image" width="256px">
+					<h2>LAPTOP REPAIRS</h2>
+					<p>Laptop won’t turn on, freezes up, and won’t boot, broken screen, broken DC jack, overheating or any other laptop issue? I'll will fix it!</p>
+					<p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+			    </div>
+				<div class="col-lg-3">
+				    <img src="/img/services_03.jpg" class="img-responsive" alt="Responsive image" width="256px">
+				    <h2>HARDWARE REPAIRS</h2>
+				    <p>Your computer has hardware problem such as power supply, motherboard, video card, memory ram or any other issue? I'll will help!</p>
+				    <p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+			    </div>
+		    </div>
+		</div>
+		
+		<!-- design -->
+		<div class="tab-pane" id="design">
+			<div class="row">
+				<div class="col-lg-3">
+					<img src="/img/services_04.png" class="img-responsive" alt="Responsive image" width="256px">
+					<h2>NETWORK DESIGN</h2>
+					<p>Need to beef up your network capability? Adding network serivces for your team? I can help design that!</p>
+					<p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+				</div>
+				<div class="col-lg-3">
+					<img src="/img/services_05.png" class="img-responsive" alt="Responsive image" width="256px">
+					<h2>FABRICATION</h2>
+					<p>Make cool things</p>
+					<p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- troubleshoot -->
+		<div class="tab-pane" id="troubleshoot">
+			<div class="row">
+				<div class="col-lg-3">
+					<img src="/img/services_06.png" class="img-responsive" alt="Responsive image" width="225px" style="padding:15px;">
+					<h2>Personal Devices</h2>
+					<p>Tablet won't connect to your wifi? Need to upgrade your firmware? App suggestions? I can fix that!</p>
+					<p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+				</div>
+				<div class="col-lg-3">
+					<img src="/img/services_07.png" class="img-responsive" alt="Responsive image" width="225px" style="padding:15px;">
+					<h2>Network</h2>
+					<p>Can't print? Internet not working? Unable to share files? I can fix that!</p>
+					<p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- other -->
+		<div class="tab-pane" id="other">other</div>
+	</div>	  
+	 
+      <!-- Site footer -->
+      <div class="footer">
+        <p>&copy; Matthew Gizzi 2013</p>
+      </div>
+
+    </div> <!-- /container -->
+	
+	<!-- End Here -->
+	
+	<!-- Scripts Below Here -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script>
+		$(function () {
+			$('#ServicesTab a').click(function (e) {
+				e.preventDefault()
+				$(this).tab('show')
+			}) 
+		})
+	</script>	
+</body>
+</html>
