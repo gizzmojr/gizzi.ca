@@ -23,9 +23,9 @@
     <div class="container">
     <div class="masthead">
         <h1>Gizzi Gadgets
-		<img src="/img/logo.jpg" alt="...">
+		<img src="/img/logo.jpg" alt="..." width="150px">
 		</h1>
-        <ul class="nav nav-pills">
+        <ul class="nav nav-pills nav-justified">
             <li><a href="/" class="btn btn-lg">Home</a></li>
             <li class="active"><a href="" class="btn btn-primary btn-lg">Services</a></li>
             <li><a href="#" class="btn btn-lg">Projects</a></li>
@@ -35,14 +35,14 @@
     </div>
 
 	<!-- Nav Tabs -->
-	<ul class="nav nav-tabs" id="ServicesTab">
-		<li class="active"><a href="#repair">Repair</a></li>
-		<li><a href="#troubleshoot">Troubleshoot</a></li>
-		<li><a href="#design">Design</a></li>
-		<li><a href="#other">Other</a></li>
+	<ul class="nav nav-tabs nav-justified" id="ServicesTab">
+		<li class="active"><a href="">Repair</a></li>
+		<li><a href="./troubleshoot.html">Troubleshoot</a></li>
+		<li><a href="./design.html">Design</a></li>
+		<li><a href="#other"  class="disabled">Other</a></li>
 	</ul>
 
-	<div class="tab-content">
+	<div class="tab-content parentNode">
 		<!-- repair -->
 		<div class="tab-pane active" id="repair">
 		    <div class="row">
@@ -50,67 +50,79 @@
 				    <img src="/img/services_01.jpg" class="img-responsive" alt="Responsive image" width="256px">
 				    <h2>Desktop Repairs</h2>
 				    <p>Desktop computer won’t power on, freezes up, crashes, won’t start up or boot, and shows a blue screen or any other issue? I'll will repair it!</p>
-				    <p><a class="btn btn-primary" href="/services/details.html#desktop">View details &raquo;</a></p>
+				    <p><a class="btn btn-primary" href="#desktop" id="details1">View details &raquo;</a></p>
 				</div>
 				<div class="col-lg-3">
 				 	<img src="/img/services_02.jpg" class="img-responsive" alt="Responsive image" width="256px">
 					<h2>Laptop<br>Repairs</h2>
 					<p>Laptop won’t turn on, freezes up, and won’t boot, broken screen, broken DC jack, overheating or any other laptop issue? I'll will fix it!</p>
-					<p><a class="btn btn-primary" href="/services/details.html#laptop">View details &raquo;</a></p>
+					<p><a class="btn btn-primary" href="#laptop" id="details2">View details &raquo;</a></p>
 			    </div>
 				<div class="col-lg-3">
 				    <img src="/img/services_03.jpg" class="img-responsive" alt="Responsive image" width="256px">
 				    <h2>Hardware Repairs</h2>
 				    <p>Your computer has hardware problem such as power supply, motherboard, video card, memory ram or any other issue? I'll will help!</p>
-				    <p><a class="btn btn-primary" href="/services/details.html#hardware">View details &raquo;</a></p>
+				    <p><a class="btn btn-primary" href="#hardware" id="details3">View details &raquo;</a></p>
 			    </div>
 		    </div>
 		</div>
-		
-		<!-- design -->
-		<div class="tab-pane" id="design">
-			<div class="row">
-				<div class="col-lg-3">
-					<img src="/img/services_04.png" class="img-responsive" alt="Responsive image" width="256px">
-					<h2>Network Design</h2>
-					<p>Need to beef up your network capability? Adding network serivces for your team? I can help design that!</p>
-					<p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
-				</div>
-				<div class="col-lg-3">
-					<img src="/img/services_05.png" class="img-responsive" alt="Responsive image" width="256px">
-					<h2>Fabrication</h2>
-					<p>Make cool things</p>
-					<p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
-				</div>
-			</div>
-		</div>
-		
-		<!-- troubleshoot -->
-		<div class="tab-pane" id="troubleshoot">
-			<div class="row">
-				<div class="col-lg-3">
-					<img src="/img/services_06.png" class="img-responsive" alt="Responsive image" width="225px" style="padding:15px;">
-					<h2>Personal Devices</h2>
-					<p>Tablet won't connect to your wifi? Need to upgrade your firmware? App suggestions? I can fix that!</p>
-					<p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
-				</div>
-				<div class="col-lg-3">
-					<img src="/img/services_07.png" class="img-responsive" alt="Responsive image" width="225px" style="padding:15px;">
-					<h2>Network</h2>
-					<p>Can't print? Internet not working? Unable to share files? I can fix that!</p>
-					<p><a class="btn btn-primary" href="#">View details &raquo;</a></p>
-				</div>
-			</div>
-		</div>
-		
-		<!-- other -->
-		<div class="tab-pane" id="other">other</div>
 	</div>	  
-	 
-      <!-- Site footer -->
-      <div class="footer" style="text-align:center;">
-        <p>&copy; Matthew Gizzi 2013</p>
-      </div>
+
+	<div class="tab-content childNode">
+		<div class="tab-content">
+		<!-- repair -->
+		<div class="tab-pane active" id="repair">
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#desktop">
+								Desktop Repairs
+							</a>
+						</h4>
+					</div>
+					<div id="desktop" class="panel-collapse collapse">
+						<div class="panel-body">
+							Under Construction
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#laptop">
+								Laptop Repairs
+							</a>
+						</h4>
+					</div>
+					<div id="laptop" class="panel-collapse collapse">
+						<div class="panel-body">
+							Under Construction
+						</div>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#hardware">
+								Hardware Repairs
+							</a>
+						</h4>
+					</div>
+					<div id="hardware" class="panel-collapse collapse">
+						<div class="panel-body">
+							Under Construction
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<!-- Site footer -->
+	<div class="footer" style="text-align:center;">
+		<p>&copy; Matthew Gizzi 2013</p>
+	</div>
 
     </div> <!-- /container -->
 	
@@ -119,13 +131,26 @@
 	<!-- Scripts Below Here -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	
+	<!-- startup -->
 	<script>
-		$(function () {
-			$('#ServicesTab a').click(function (e) {
-				e.preventDefault()
-				$(this).tab('show')
-			}) 
-		})
+		$('.childNode').hide();
+		$('.parentNode').show();
+	</script>
+	
+	<!-- details show -->
+	<script>
+		$('#details1, #details2, #details3').click(function () {
+			$('.parentNode').hide();
+			$('.childNode').show();
+			var href = $(this).attr('href');
+			$('#accordion [href="' + href + '"]').click();
+			return false;
+		});
+		<!-- $("#return").click(function () { -->
+			<!-- $('.childNode').hide(); -->
+			<!-- $('.parentNode').show(); -->
+		<!-- }); -->
 	</script>
 </body>
 </html>

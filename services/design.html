@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gizzi Gadgets</title>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="This is a lengthy description." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Keywords" content="Motorcycles, Animals, Networking, Stuff" />	
+
+	<link rel="publisher" href="https://plus.google.com/110992459509753500705" />
+	<!-- <link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.jpg" /> -->
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme-gizzi.min.css">
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png" width="16px">
+
+</head>
+  
+<body>
+	<!-- Start Here -->
+    <div class="container">
+    <div class="masthead">
+        <h1>Gizzi Gadgets
+		<img src="/img/logo.jpg" alt="..." width="150px">
+		</h1>
+        <ul class="nav nav-pills nav-justified">
+            <li><a href="/" class="btn btn-lg">Home</a></li>
+            <li class="active"><a href="/services/" class="btn btn-primary btn-lg">Services</a></li>
+            <li><a href="#" class="btn btn-lg">Projects</a></li>
+            <li><a href="#" class="btn btn-lg">About</a></li>
+            <li><a href="/contact.html" class="btn btn-lg">Contact</a></li>
+        </ul>
+    </div>
+
+	<!-- Nav Tabs -->
+	<ul class="nav nav-tabs nav-justified" id="ServicesTab">
+		<li><a href="./">Repair</a></li>
+		<li><a href="./troubleshoot.html">Troubleshoot</a></li>
+		<li class="active"><a href="">Design</a></li>
+		<li><a href="#other">Other</a></li>
+	</ul>
+
+	<div class="tab-content parentNode">
+		<!-- design -->
+		<div class="tab-pane active" id="design">
+			<div class="row">
+				<div class="col-lg-3">
+					<img src="/img/services_04.png" class="img-responsive" alt="Responsive image" width="256px">
+					<h2>Network Design</h2>
+					<p>Need to beef up your network capability? Adding network serivces for your team? I can help design that!</p>
+					<p><a class="btn btn-primary" href="#network" id="details2">View details &raquo;</a></p>
+				</div>
+				<div class="col-lg-3">
+					<img src="/img/services_05.png" class="img-responsive" alt="Responsive image" width="256px">
+					<h2>Fabrication</h2>
+					<p>Make cool things</p>
+					<p><a class="btn btn-primary" href="#fab" id="details2">View details &raquo;</a></p>
+				</div>
+			</div>
+		</div>
+	</div>	  
+
+	<div class="tab-content childNode">
+		<div class="tab-content">
+			<!-- design -->
+			<div class="tab-pane active" id="design">
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#network">
+									Network Design
+								</a>
+							</h4>
+						</div>
+						<div id="network" class="panel-collapse collapse">
+							<div class="panel-body">
+								Under Construction
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">
+								<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#fab">
+									Fabrication
+								</a>
+							</h4>
+						</div>
+						<div id="fab" class="panel-collapse collapse">
+							<div class="panel-body">
+								Under Construction
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Site footer -->
+	<div class="footer" style="text-align:center;">
+		<p>&copy; Matthew Gizzi 2013</p>
+	</div>
+
+    </div> <!-- /container -->
+	
+	<!-- End Here -->
+	
+	<!-- Scripts Below Here -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	
+	<!-- startup -->
+	<script>
+		$('.childNode').hide();
+		$('.parentNode').show();
+	</script>
+	
+	<!-- details show -->
+	<script>
+		$('#details1, #details2').click(function () {
+			$('.parentNode').hide();
+			$('.childNode').show();
+			var href = $(this).attr('href');
+			$('#accordion [href="' + href + '"]').click();
+			return false;
+		});
+		<!-- $("#return").click(function () { -->
+			<!-- $('.childNode').hide(); -->
+			<!-- $('.parentNode').show(); -->
+		<!-- }); -->
+	</script>
+</body>
+</html>
