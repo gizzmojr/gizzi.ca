@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gizzi Gadgets</title>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="This is a lengthy description." />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="Keywords" content="Motorcycles, Animals, Networking, Stuff" />	
+
+	<link rel="publisher" href="https://plus.google.com/110992459509753500705" />
+	<!-- <link rel="apple-touch-icon" href="/img/icons/apple-touch-icon.jpg" /> -->
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme-gizzi.min.css">
+	<link rel="shortcut icon" href="/img/favicon.png" type="image/png" width="16px">
+
+</head>
+  
+<body>
+	<!-- Start Here -->
+    <div class="container">
+    <div class="masthead">
+        <h1>Gizzi Gadgets
+		<img src="/img/logo.jpg" alt="..." width="150px">
+		</h1>
+        <ul class="nav nav-pills nav-justified">
+            <li><a href="/" class="btn btn-lg">Home</a></li>
+            <li><a href="/services/" class="btn btn-lg">Services</a></li>
+            <li><a href="/projects/" class="btn btn-lg">Projects</a></li>
+            <li class="active"><a href="" class="btn btn-primary btn-lg">About</a></li>
+            <li><a href="/contact.html" class="btn btn-lg">Contact</a></li>
+        </ul>
+    </div>
+	
+	<h2>Under Construction</h2>
+
+	<!-- Site footer -->
+	<div class="footer" style="text-align:center;">
+		<p>&copy; Matthew Gizzi 2013</p>
+	</div>
+
+    </div> <!-- /container -->
+	
+	<!-- End Here -->
+	
+	<!-- Scripts Below Here -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	
+	<!-- startup -->
+	<script>
+		$('.childNode').hide();
+		$('.parentNode').show();
+	</script>
+	
+	<!-- details show -->
+	<script>
+		$('#details1, #details2').click(function () {
+			$('.parentNode').hide();
+			$('.childNode').show();
+			var href = $(this).attr('href');
+			$('#accordion [href="' + href + '"]').click();
+			return false;
+		});
+		<!-- $("#return").click(function () { -->
+			<!-- $('.childNode').hide(); -->
+			<!-- $('.parentNode').show(); -->
+		<!-- }); -->
+	</script>
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-43742314-1', 'gizzi.ca');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>
